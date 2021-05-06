@@ -1,0 +1,102 @@
+.hero__3R{
+  position: relative;
+    height: 90vh;
+    background: url('../img/fondocampesino.png') no-repeat, rgba(65, 175,73, 0.8);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    
+
+
+    .imgS{
+        position: absolute;
+        top: 0%;
+        left: -2%;
+        height: 100vh;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.columns {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    position: absolute;
+    right: 20%;
+    min-width: 450px;
+    
+
+
+
+    @media only screen and (min-width: 1800px) {
+        min-width: 550px;
+      }
+
+
+
+
+    p{
+        font-family: 'Neusa Next Pro-CondensedRegular';
+
+        &:first-child {
+            //parrafo
+            font-size: 1.3rem;
+            color: white;
+            padding-bottom: 2.5em;
+            line-height: 1.5rem;
+
+            @media only screen and (max-width: 1400px) {
+              font-size: 1.2rem;
+              line-height: 1.3rem;
+            }
+
+            @media only screen and (min-width: 1800px) {
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+              }
+        }
+
+        &:nth-child(2){
+          //texto 3R
+            line-height: 2.5rem; //espacio 3R
+            font-size: 2.4rem;
+            color: white;
+            font-family: 'Neusa Next Pro-CondensedRegular';
+            
+            .rPrincipal{
+                font-size: 2.8rem;
+                line-height: 3rem;
+            }
+
+            &:last-of-type{
+              padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+/*@supports (object-fit: cover) {
+    .imgS img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  } */
+
+  .aVerdeClaro{
+    font-family: 'Neusa Next Pro-CondensedRegular';
+    background-color: $verdeClaro;
+    border-radius: 50px;
+    color: white;
+
+    @media only screen and (min-width: 1800px) {
+        font-size: 1.2rem;
+      }
+}
+

@@ -1,0 +1,361 @@
+.hero__3R--page {
+  margin-top: 4em;
+}
+
+.espacioVerde {
+  position: relative;
+  z-index: 3;
+  background-color: $verde;
+  padding: 2em 0;
+  margin-top: 4em;
+
+  span {
+    visibility: hidden;
+  }
+}
+
+
+//3R pagina R
+.grande {
+  font-size: 4rem;
+  line-height: 4rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+
+}
+
+.text__r {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+/////////////parallax
+
+
+.parallax__completo {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/fondo.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+// fondo para las secciones
+
+.parallax__completo--2 {
+  background-image: url('../img/recuperamos.png');
+}
+
+.parallax__completo--3 {
+  background-image: url('../img/fondoseccion3.png');
+}
+
+/*.parallax__completo--2 {
+    background-image: url('fondo1.png');
+    transform: all .3s ease-in;
+  }*/
+
+.parallax__columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 50%;
+  max-height: 100vh;
+  padding: 0;
+  margin-left: 35%;
+
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100%
+  }
+
+  li {
+    font-family: 'Neusa Next Pro-CondensedRegular';
+    color: $grisClaro;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1em;
+    list-style-position: inside;
+    max-width: 350px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    @media only screen and (min-width: 1450px) {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1800px) {
+      max-width: 400px;
+    }
+  }
+
+  span {
+    color: $verdeClaro;
+    font-size: 1.2rem;
+    font-family: 'Neusa Next Pro Bold';
+
+    @media only screen and (min-width: 1450px) {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+/*.parallax__nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2em;
+    top: 50%;
+  }*/
+
+
+/*
+.prueba {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+}
+
+.textoPrueba{
+  width: 100%;
+  background-color: blue;
+  height: fit-content;
+  opacity: 0;
+}
+
+.box{
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+} */
+
+
+
+//icono de cada seccion
+
+.iconosSeccion {
+  height: auto;
+  position: relative;
+  padding-right: 2em;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 1450px) {
+    padding: 1em;
+  }
+
+  img {
+    height: 128px;
+    object-fit: cover;
+
+    @media only screen and (max-width: 1450px) {
+      height: 160px;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      height: 200px;
+    }
+
+    @media only screen and (min-width: 1800px) {
+      height: 240px;
+    }
+
+
+  }
+}
+
+////texto vertical secciones
+.verticalText__seccion {
+
+  left: 5%;
+
+  p {
+    font-family: $neusaCompactBold;
+    color: white;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-size: 6rem;
+
+    @media only screen and (max-width: 1600px) {
+      letter-spacing: .2rem;
+
+
+      &::before {
+        height: 1rem;
+      }
+    }
+
+    @media only screen and (min-width: 1601px) {
+      font-size: 7.5rem;
+
+
+      &::before {
+        height: 2rem;
+      }
+    }
+
+    @media only screen and (min-width: 1801px) {
+      font-size: 8rem;
+
+
+      &::before {
+        height: 2rem;
+      }
+    }
+
+
+
+
+
+    &::before {
+      content: '';
+      background-color: $verdeClaro;
+      height: 6.5rem;
+      padding: 2px;
+      display: inline-block;
+      position: relative;
+      vertical-align: baseline;
+    }
+  }
+}
+
+
+//seccion recuperamos
+.verticalText__seccion--recuperamos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+
+
+  p {
+    font-family: $neusaCompactBold;
+    color: $grisClaro;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-size: 6rem;
+
+    &::before {
+      content: '';
+      background-color: $verdeClaro;
+      height: 6.5rem;
+      padding: 2px;
+      display: inline-block;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+
+  }
+}
+
+.verticalText__recuperamos {
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  display: inline-block;
+  justify-content: center;
+  z-index: 1;
+
+  p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    letter-spacing: .2rem;
+    margin-left: 1em;
+    max-width: fit-content;
+
+    @media only screen and (min-width: 1601px) {
+      font-size: 7.5rem;
+      
+      &::before{
+        height: 1rem;
+      }
+    }
+
+    @media only screen and (min-width: 1801px) {
+      font-size: 8rem;
+
+
+      &::before {
+        height: 2rem;
+      }
+    }
+
+
+    &::before {
+      content: '';
+      background-color: $verdeClaro;
+      height: 4rem;
+      padding: 2px;
+      display: inline-block;
+      position: relative;
+      vertical-align: baseline
+    }
+
+  }
+}
+
+.parallax__columns--recuperamos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 50%;
+  max-height: 100vh;
+  padding: 0;
+  left: 0;
+  margin-left: 8%;
+
+  li {
+    span {
+      color: $verde;
+    }
+  }
+
+}
+
+
+//secion 3
+.verticalText__section--3 {
+  p {
+    color: $grisClaro;
+  }
+}

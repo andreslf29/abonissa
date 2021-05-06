@@ -1,0 +1,80 @@
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+/*
+.caja{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/recuperamos.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.columnas__seccion{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top:0%;
+    width: fit-content;
+    max-width: 40%;
+    img{
+        height: 8em;
+    }
+
+
+}
+
+
+.lista__seccion{
+    li{
+        font-family: 'Neusa Next Pro-CondensedRegular';
+        color: $grisClaro;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding-bottom: 1em;
+
+        &:last-of-type{
+            padding-bottom: 0;
+        }
+    }
+
+}
+
+.textoVertical__seccion{
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    display: inline-block;
+    justify-content: center;
+    z-index: 1;
+    
+    
+    
+    p{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        color: $grisClaro;
+        font-size:6.2rem;
+        letter-spacing: .2rem;
+       
+        
+
+        &::before{
+            content: '';
+            background-color: $verdeClaro;
+            height: .5em;
+            padding: 2px;
+            display: inline-block;
+            position: relative;
+            vertical-align:baseline;        
+        }
+    }
+}

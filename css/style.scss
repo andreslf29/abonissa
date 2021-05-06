@@ -1,0 +1,136 @@
+$verde: #41af49;
+$verdeClaro: #acd037;
+$verdeOscuro: #27461f;
+$gris: #a7a9ac;
+$grisClaro: #bcbec0;
+$grisTitulo: #808285;
+
+$letrapeque:1rem;
+
+
+$neusaCompactBold:'Neusa Next Pro Compact Bold';
+$neusaCompactMedium: 'Neusa Next Pro Compact Medium';
+$neusaCondensedRegular: 'Neusa Next Pro-CondensedRegular';
+$neusaCondensedBold: 'Neusa Next Pro-CondensedBold';
+
+@import "reset";
+@import "fonts";
+
+@import "header","mapa","hero","footer","seccion","separador","3R","form","agricultura","productos","infoProducto","iconSection","crecer","page3R","biodigestor";
+
+
+.block{
+    display: block;
+}
+
+
+//section 100vh
+.FullView{
+    height: 100vh;
+    width: 100%;
+}
+
+.neusaCompBold{
+    font-family: 'Neusa Next Pro Compact Bold';
+}
+
+.neusaCompRegular{
+    font-family: 'Neusa Next Pro Compact Regular';
+}
+
+
+.neusaCondRegular{
+    font-family: 'Neusa Next Pro-CondensedRegular';
+}
+.neusaCondBold{
+    font-family: 'Neusa Next Pro-CondensedBold';
+}
+
+.neusaBold{
+    font-family: 'Neusa Next Pro Bold';
+}
+
+.neusaMedium{
+    font-family: 'Neusa Next Pro-Medium';
+}
+
+
+.textoGrande{
+    font-size: 4.5rem;
+    letter-spacing: -.2rem;
+    line-height: 2.5rem;
+    padding: 0;
+    padding-top: .5rem;
+    margin: 0;
+
+    @media only screen and (max-width: 1400px) {
+        font-size: 4.8rem;
+      }
+
+    @media only screen and (min-width: 1600px) {
+        font-size: 6rem;
+        line-height: 3rem;
+      }
+}
+
+.textoMedio{
+    font-size: 1.5rem;
+}
+
+.textoVerde{
+    color: $verde;
+}
+
+.textoVerdeOscuro{
+    color:$verdeOscuro;
+}
+
+
+
+.textoVertical{
+    background-color: #acd037;
+
+    p{
+        display: inline-block;
+        position: relative;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+
+        &::before{
+            content: '';
+            position: absolute;
+            right: left;
+            width: 1px;
+            height: 10em;
+            background-color: blue;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+    }
+
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+//r resaltado
+.resaltar{
+    &:hover{
+        color: $verdeClaro;
+        transition: all .3 ease-out;
+    }
+
+}
+
+///texto colores
+
+.palabraVerde{
+    color:$verde;
+}
+
+
+
+

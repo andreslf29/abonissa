@@ -1,0 +1,214 @@
+.iconSeccion{
+    height: auto;
+    padding-bottom: 2em;
+    max-width: 100%;
+
+    .iconContenido{
+        border-bottom: 4px solid $verdeClaro;
+        border-top: 4px solid $verdeClaro;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 6em 0;
+        padding-bottom: 6em;
+        position: relative;
+    }
+
+    .textoIcon {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+
+        p{
+            &:nth-of-type(2){
+                color: $verde;
+                letter-spacing: .2rem;
+                font-size: 4rem;
+                line-height: 4.2rem;
+            }
+        }
+    }
+
+    .formula{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.textoIcon{
+    color: $grisClaro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0;
+
+    p{
+        width: 100%;
+        text-align: center;
+        &:first-of-type,&:last-of-type{
+            font-family: 'Neusa Next Pro-CondensedRegular';
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+
+            .textoVerde{
+                color: $verde;
+            }
+        }
+
+        &:nth-of-type(2){
+            font-family: Neusa Next Pro Bold;
+            color: $verdeOscuro;
+            font-size: 3.2rem;
+        }
+            
+    }
+}
+
+.iconContenido{
+    display: flex;
+    width: 100%;
+}
+
+.textoIcon{
+    display: flex;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.formula{
+    color: $grisClaro;
+    font-family: 'Neusa Next Pro-CondensedRegular';
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-end;
+
+   .textoVerde{
+        color: $verdeClaro;
+        align-self: center;
+        font-size: 2rem;
+        }
+
+    .iconoTexto{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            text-align: center;
+            font-size: 1.1rem;
+            padding-top: 1em;
+
+            @media only screen and (min-width: 1800px) {
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+              }
+        }
+
+        img{
+            padding: 1em 2em;
+        }
+
+        &:last-of-type{
+            display: flex;
+            justify-content: center;
+
+            p{
+                margin-left: -1.5em;
+            }
+        }
+    }
+}
+
+.partesFormula{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    padding: 1em 0;
+}
+
+.verticalText{
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    display: inline-block;
+    justify-content: center;
+    z-index: 1;
+    
+    
+    p{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-family: 'Neusa Next Pro-CondensedRegular';
+        color: $grisTitulo;
+        letter-spacing: .5rem;
+       margin-right: 1em;
+        
+
+        &::before{
+            content: '';
+            background-color: $verdeClaro;
+            height: 7em;
+            padding: 2px;
+            display: inline-block;
+            position: relative;
+            vertical-align:baseline         
+        }
+    }
+}
+
+.verticalText--white{
+    p{
+        color: white;
+        font-size: 1rem;
+
+        @media only screen and (min-width: 1800px) {
+            font-size: 1.5rem;
+          }
+    }
+}
+
+.verticalText--white2{
+    position: absolute;
+    bottom: 12.8%;
+    left: 8%;
+    p{
+        color: white;
+        font-size: 1rem;
+
+        @media only screen and (min-width: 1800px) {
+            font-size: 1.5rem;
+          }
+
+          &::before{
+            content: '';
+            background-color: $verdeClaro;
+            height: 10em;
+            padding: 2px;
+            display: inline-block;
+            position: relative;
+            vertical-align:baseline         
+        }
+    }
+}
+
+.verticalText--last{
+     top:0;
+     p{
+
+          &::before{
+            content: '';
+            background-color: $verdeClaro;
+            height: 20em;
+            padding: 2px;
+            display: inline-block;
+            position: relative;
+            vertical-align:baseline         
+        }
+    }
+
+    @media only screen and (min-width: 1800px) {
+        left:5%
+      }
+
+
+}

@@ -1,0 +1,93 @@
+.crecer{
+    height: 100vh;
+    background: url('../img/portadacrecer.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 6em 8em;
+
+    @media only screen and (min-width: 1800px) {
+        padding: 10em 12em;
+      }
+
+
+    p{
+        color: $verdeOscuro;
+        font-family: 'Neusa Next Pro-Medium';
+        font-size: 3rem;
+        line-height: 2rem;
+
+        @media only screen and (max-width: 1400px) {
+            font-size: 2rem;
+            line-height: 2rem;
+          }
+
+
+        @media only screen and (min-width: 1800px) {
+            font-size: 4.3rem;
+            line-height: 2.5rem;
+          }
+
+
+    
+
+
+
+        span .neusaCompRegular{
+            font-family: 'Neusa Next Pro Compact Regular';
+        }
+
+        span .textoMedio{
+            font-size: 5rem;
+            line-height: 5rem;
+
+            @media only screen and (max-width: 1400px) {
+                font-size: 4rem;
+                line-height: 4rem;
+              }
+
+            @media only screen and (min-width: 1800px) {
+                font-size: 6.5rem;
+                line-height: 6.6rem;
+              }
+        
+        }
+
+        span .neusaCompBold {
+            font-family: 'Neusa Next Pro Compact Bold';
+            line-height: 2.5em;
+        }
+
+        span .textoGrande{
+            font-size: 9.5rem;
+            line-height: 7rem;
+
+            @media only screen and (max-width: 1400px) {
+                font-size: 8rem;
+                line-height: 6rem;
+              }
+
+
+            @media only screen and (min-width: 1800px) {
+                font-size: 12.5rem;
+                line-height: 9.8rem;
+              }
+        
+        }
+
+        .ultimoText{
+            margin-top: -.65em;
+        }
+    }
+}
+
+.imgHero{
+    padding-top: 4em;
+    
+    img{
+        @media only screen and (min-width: 1800px) {
+            height: 70px;
+           }
+    }
+
+
+}

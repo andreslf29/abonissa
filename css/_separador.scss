@@ -1,0 +1,42 @@
+.separadorVerde{
+    background-color: white;
+    padding: 2.5em 0;
+
+    .barra{
+        background-color: $verde;
+        padding: 1.5em;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: 'Neusa Next Pro-CondensedRegular';
+        font-size: 1.3rem;
+        letter-spacing: .5rem;
+
+        @media only screen and (min-width: 1800px) {
+           font-size: 1.7rem;
+        }
+
+        span{
+            font-family: 'Neusa Next Pro-CondensedBold';
+        }
+    }
+
+    .barra--productos{
+        font-size: 3rem;
+        letter-spacing: 0.1em;
+        padding: .5em;
+    }
+}
+
+
+
+.separadorVerde--productos{
+    padding: 2.5em 0;
+}
+
+
+
+
+
+
+

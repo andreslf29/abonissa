@@ -1,0 +1,3452 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, p, section, div, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  src: url("../fonts/neusanextpro-condensedregular-webfont.woff") format("woff"), url("../fonts/neusanextpro-condensedregular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro-CondensedBold';
+  src: url("../fonts/NeusaNextPro-CondensedBold.woff") format("woff"), url("../fonts/NeusaNextPro-CondensedBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro-Medium';
+  src: url("../fonts/NeusaNextPro-Medium.woff") format("woff"), url("../fonts/NeusaNextPro-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro Compact Bold';
+  src: url("../fonts/NeusaNextPro-CompactBold.woff") format("woff"), url("../fonts/NeusaNextPro-CompactBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro Compact Regular';
+  src: url("../fonts/neusanextpro-compactregular-webfont.woff") format("woff"), url("../fonts/NeusaNextPro-CompactRegular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro Compact Medium';
+  src: url("../fonts/neusanextpro-compactmedium-webfont.woff") format("woff"), url("../fonts/neusanextpro-compactmedium-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Neusa Next Pro Bold';
+  src: url("../fonts/NeusaNextPro-Bold.woff") format("woff"), url("../fonts/NeusaNextPro-Bold.woff2") format("woff2");
+}
+
+header {
+  position: fixed;
+  top: 0;
+  color: #808285;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0em 3em;
+  font-size: 1rem;
+  border-bottom: 4px solid #acd037;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  z-index: 80;
+  background-color: white;
+}
+
+@media only screen and (min-width: 1800px) {
+  header {
+    font-size: 1rem;
+  }
+}
+
+header .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  height: 4em;
+}
+
+@media only screen and (max-width: 1400px) {
+  header .iconos {
+    font-size: 1.2rem;
+    right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  header .iconos {
+    font-size: 1.4rem;
+    right: 8%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  header .iconos {
+    font-size: 1.4rem;
+  }
+}
+
+header .iconos a {
+  padding: .1em;
+  cursor: pointer;
+}
+
+header .iconos a:hover {
+  color: #41af49;
+  -webkit-animation: heartBeat;
+          animation: heartBeat;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+header .iconos .filaWhatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .iconos .filaWhatsapp a {
+  padding: 0;
+  margin: 0;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0;
+}
+
+header .iconos .filaWhatsapp a img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media only screen and (max-width: 1400px) {
+  header .iconos .filaWhatsapp a img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo a img {
+  max-height: 50px;
+}
+
+.logo a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (min-width: 1800px) {
+  .logo a img {
+    max-height: 60px;
+  }
+}
+
+.menu {
+  width: 80%;
+  max-width: 900px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1800px) {
+  .menu {
+    max-width: 1200px;
+  }
+}
+
+.icon.open {
+  display: none;
+}
+
+.close {
+  font-size: 2rem;
+  display: none;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em;
+  margin: 0;
+  position: relative;
+}
+
+.list .list__item {
+  padding-top: 2em;
+}
+
+@media only screen and (max-width: 1400px) {
+  .list .list__item {
+    padding-top: 1.6em;
+  }
+}
+
+.list .list__item:after {
+  display: block;
+  content: '';
+  border-bottom: solid 4px #41af49;
+  margin-top: 2em;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+@media only screen and (max-width: 1400px) {
+  .list .list__item:after {
+    margin-top: 1.6em;
+  }
+}
+
+.list .list__item:hover:after {
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+}
+
+.list a:hover {
+  color: #41af49;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+  .logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+  .menu {
+    background: black;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    z-index: 999;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #menu:target {
+    right: 0;
+    opacity: 1;
+  }
+  .icon.open {
+    display: block;
+  }
+  .close {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    display: block;
+  }
+  .list {
+    height: 50%;
+    margin-top: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.scroll {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: .0em;
+  border-bottom: 0;
+}
+
+.scroll .iconos {
+  display: none;
+}
+
+.scroll:hover {
+  padding: .5em;
+  background-color: white;
+}
+
+.submenu {
+  display: none;
+  background-color: white;
+  margin-top: 12em;
+}
+
+li:hover .submenu {
+  display: block;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  padding-top: 2.5em;
+  margin-left: -.5%;
+}
+
+li:hover .submenu a {
+  padding: 0 .3em;
+  margin: 0;
+}
+
+#cerca-a-mi {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4em;
+}
+
+.container__mapa {
+  height: 100%;
+  width: 100%;
+  margin-top: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.container__mapa h3 {
+  color: #bcbec0;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 2rem;
+  line-height: 1.8rem;
+  position: absolute;
+  left: 10%;
+}
+
+@media only screen and (min-width: 1800px) {
+  .container__mapa h3 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+}
+
+.card-body {
+  overflow-y: scroll;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-body::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background-color: #bcbec0;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "texttos filtros "  "texttos imgselect";
+  place-items: start;
+}
+
+.texttos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: imgselect;
+  padding: 10px;
+  height: 500px;
+  width: 300px;
+}
+
+.filtros {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: filtros;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: fit-content;
+}
+
+.mapa__anuncio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 90vh;
+  padding: 4em 0;
+}
+
+.mapa__anuncio h3 {
+  color: #bcbec0;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 2rem;
+  line-height: 1.8rem;
+  position: absolute;
+  left: 10%;
+}
+
+@media only screen and (min-width: 1800px) {
+  .mapa__anuncio h3 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+}
+
+.mapa__anuncio h4 {
+  color: #bcbec0;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 2rem;
+  line-height: 1.8rem;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+
+@media only screen and (min-width: 1600px) {
+  .mapa__anuncio h4 {
+    font-size: 3rem;
+    line-height: 1.8rem;
+  }
+}
+
+.mapa__anuncio h4 span {
+  color: #41af49;
+  font-size: 1.8rem;
+}
+
+.mapa__anuncio h4 span:first-of-type {
+  color: #27461f;
+}
+
+.mapa__anuncio h2 {
+  position: absolute;
+  font-size: 15rem;
+  color: #bcbec0;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  top: 30%;
+  z-index: -1;
+}
+
+.mapa__anuncio .s__abonissa {
+  position: absolute;
+  right: 15%;
+}
+
+.mapa__anuncio .mapa__clima {
+  position: absolute;
+}
+
+@media only screen and (min-width: 1800px) {
+  .mapa__anuncio .mapa__clima {
+    height: 700px;
+  }
+}
+
+.cont-select {
+  padding: 0.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.texttos {
+  margin-left: 2em;
+  width: 100%;
+}
+
+.imgselect {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: texttos;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+}
+
+.imgcd img {
+  height: 500px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .imgcd img {
+    height: 800px;
+  }
+}
+
+.contimprimir a {
+  color: #41af49;
+  font-size: 1rem;
+  line-height: .8rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Neusa Next Pro-CondensedRegular";
+}
+
+.contimprimir a:hover {
+  color: #acd037;
+}
+
+.contimprimir p {
+  color: #bcbec0;
+  font-size: .8rem;
+  line-height: 1rem;
+  font-family: "Neusa Next Pro-CondensedRegular";
+}
+
+.textcd {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.im {
+  background-color: transparent;
+  background-color: beige;
+}
+
+.map, .map2 {
+  text-decoration: none;
+}
+
+.Seleccione {
+  color: #a7a9ac;
+  font-family: "Neusa Next Pro-CondensedBold";
+  font-size: 2rem;
+  line-height: 1.8rem;
+  border: none;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1800px) {
+  .Seleccione {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+}
+
+#clima {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 4em 0;
+}
+
+.seleccion {
+  color: #27461f;
+  background-color: #acd037;
+  font-family: "Neusa Next Pro-CondensedBold";
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: .5em;
+}
+
+.hero {
+  margin-top: 4em;
+  height: 100vh;
+  background: url("../img/hero.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contenidoHero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  height: 100%;
+  /*texto 3R*/
+}
+
+.contenidoHero .heroTexto {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .contenidoHero .heroTexto {
+    right: 13%;
+    top: 16%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .contenidoHero .heroTexto {
+    top: 22%;
+    right: 14%;
+    font-size: 2.5rem;
+  }
+}
+
+.contenidoHero .heroTexto h2 {
+  font-family: 'Neusa Next Pro-Medium';
+  color: #27461f;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .contenidoHero .heroTexto h2 {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  .contenidoHero .heroTexto h2 {
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+}
+
+.contenidoHero .heroTexto h2:last-of-type {
+  padding-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 1400px) {
+  .contenidoHero .heroTexto h2:last-of-type {
+    padding-bottom: 1em;
+  }
+}
+
+.contenidoHero .heroTexto p {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+  color: #27461f;
+  line-height: 1.5rem;
+}
+
+.contenidoHero .heroTexto p:last-of-type {
+  padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 1800px) {
+  .contenidoHero .heroTexto p:last-of-type {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.contenidoHero .heroTexto .botonOpacidad {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  background: #27461f;
+  background-blend-mode: multiply;
+  border-radius: 50px;
+  padding: .2em 2em;
+  color: white;
+}
+
+@media only screen and (min-width: 1800px) {
+  .contenidoHero .heroTexto .botonOpacidad {
+    font-size: 1.2rem;
+  }
+}
+
+.contenidoHero .imgHero {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contenidoHero .imgHero .imgHero img {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1800px) {
+  .contenidoHero .imgHero .imgHero img {
+    height: 50px;
+  }
+}
+
+.contenidoHero .imgLogo {
+  position: absolute;
+  bottom: 13%;
+  right: 8%;
+}
+
+.contenidoHero .imgLogo img {
+  height: 45px;
+}
+
+.contenidoHero .heroTexto__3R {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+@media only screen and (min-width: 1800px) {
+  .contenidoHero .heroTexto__3R {
+    right: 12%;
+    top: 24%;
+  }
+}
+
+.contenidoHero .heroTexto__3R--page {
+  top: 25%;
+  right: 25%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contenidoHero .heroTexto__3R--page {
+    right: 10%;
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .contenidoHero .heroTexto__3R--page {
+    right: 12%;
+    top: 30%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .contenidoHero .heroTexto__3R--page {
+    right: 15%;
+    top: 35%;
+  }
+}
+
+.contenidoHero .heroTexto__3R--page p:last-of-type {
+  padding-bottom: 0;
+}
+
+.contenidoHero .imgHero {
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+}
+
+.contenidoHero .heroTexto--agri {
+  position: absolute;
+  top: 22%;
+  left: 18%;
+}
+
+.contenidoHero .heroTexto--agri p {
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  color: white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .contenidoHero .heroTexto--agri p {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+.btnHover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: .5em 2em;
+}
+
+.btnHover:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #acd037;
+  border-radius: 50px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btnHover:hover {
+  color: white;
+}
+
+.btnHover:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.sombraBlanca {
+  text-shadow: -0px 0px 1em #fff;
+}
+
+.btnHoverVerde {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #27461f;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: .2em 2em;
+  font-size: 1.2rem;
+}
+
+.btnHoverVerde:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #27461f;
+  border-radius: 50px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btnHoverVerde:hover {
+  color: #acd037;
+}
+
+.btnHoverVerde:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.footerRow {
+  height: auto;
+  padding: 2em 6em;
+  background-color: #41af49;
+  border-bottom: 5px solid #acd037;
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .footerRow {
+    padding: 2em 6.5em;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+.footerRow .whatsapp {
+  color: white;
+  font-size: 3rem;
+  background-color: #41af49;
+  padding: .3em .3em;
+  border: 1px solid #41af49;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+  left: 50%;
+}
+
+.footerRow .whatsapp:hover {
+  -webkit-animation: heartBeat;
+          animation: heartBeat;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.footerRow h4 {
+  color: white;
+  font-size: 2rem;
+}
+
+.footerRow p span .neusaCondBold {
+  font-family: 'Neusa Next Pro-CondensedBold';
+}
+
+.iconos--footer {
+  right: 3.5em;
+  top: 40%;
+  color: white;
+  font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .iconos--footer {
+    font-size: 2.5rem;
+  }
+}
+
+.iconos--footer a:hover {
+  color: #acd037;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footerRow--2 {
+  padding: 4em 8em;
+  margin: 0;
+  border-bottom: 2em solid #41af49;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .footerRow--2 {
+    padding: 2em 8em;
+  }
+}
+
+.footerRow--2 p {
+  color: #bcbec0;
+  font-family: 'Neusa Next Pro Compact Regular';
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1600px) {
+  .footerRow--2 p {
+    font-size: 1rem;
+  }
+}
+
+.footerRow--2 a {
+  color: #41af49;
+}
+
+.footerRow--2 .logoFooter img {
+  max-width: 600px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .footerRow--2 .logoFooter img {
+    max-width: 300px;
+  }
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.contenedor {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/*
+.caja{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/recuperamos.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.columnas__seccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 40%;
+}
+
+.columnas__seccion img {
+  height: 8em;
+}
+
+.lista__seccion li {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  color: #bcbec0;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-bottom: 1em;
+}
+
+.lista__seccion li:last-of-type {
+  padding-bottom: 0;
+}
+
+.textoVertical__seccion {
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.textoVertical__seccion p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #bcbec0;
+  font-size: 6.2rem;
+  letter-spacing: .2rem;
+}
+
+.textoVertical__seccion p::before {
+  content: '';
+  background-color: #acd037;
+  height: .5em;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.separadorVerde {
+  background-color: white;
+  padding: 2.5em 0;
+}
+
+.separadorVerde .barra {
+  background-color: #41af49;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.3rem;
+  letter-spacing: .5rem;
+}
+
+@media only screen and (min-width: 1800px) {
+  .separadorVerde .barra {
+    font-size: 1.7rem;
+  }
+}
+
+.separadorVerde .barra span {
+  font-family: 'Neusa Next Pro-CondensedBold';
+}
+
+.separadorVerde .barra--productos {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  padding: .5em;
+}
+
+.separadorVerde--productos {
+  padding: 2.5em 0;
+}
+
+.hero__3R {
+  position: relative;
+  height: 90vh;
+  background: url("../img/fondocampesino.png") no-repeat, rgba(65, 175, 73, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+.hero__3R .imgS {
+  position: absolute;
+  top: 0%;
+  left: -2%;
+  height: 100vh;
+}
+
+.hero__3R .imgS img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  position: absolute;
+  right: 20%;
+  min-width: 450px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .columns {
+    min-width: 550px;
+  }
+}
+
+.columns p {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+}
+
+.columns p:first-child {
+  font-size: 1.3rem;
+  color: white;
+  padding-bottom: 2.5em;
+  line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .columns p:first-child {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .columns p:first-child {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+
+.columns p:nth-child(2) {
+  line-height: 2.5rem;
+  font-size: 2.4rem;
+  color: white;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+}
+
+.columns p:nth-child(2) .rPrincipal {
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+
+.columns p:nth-child(2):last-of-type {
+  padding-bottom: 2em;
+}
+
+/*@supports (object-fit: cover) {
+    .imgS img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  } */
+.aVerdeClaro {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  background-color: #acd037;
+  border-radius: 50px;
+  color: white;
+}
+
+@media only screen and (min-width: 1800px) {
+  .aVerdeClaro {
+    font-size: 1.2rem;
+  }
+}
+
+.formContacto {
+  padding: 6em 8.5em;
+  height: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .formContacto {
+    padding: 6em 7.5em;
+  }
+}
+
+.contenidoForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.textoForm {
+  width: 50%;
+}
+
+.textoForm p {
+  color: #bcbec0;
+  font-size: 2.5rem;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  line-height: 2.5rem;
+}
+
+@media only screen and (min-width: 1800px) {
+  .textoForm p {
+    font-size: 3.5rem;
+    line-height: 3.3rem;
+  }
+}
+
+.form__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form__section {
+    padding: 1em 1em;
+  }
+}
+
+form label {
+  display: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  width: 100%;
+}
+
+.form-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  border-radius: 25px;
+  border: 2px solid #acd037;
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  width: 100%;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5em;
+  padding: 1em 1em;
+}
+
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+  padding-bottom: 4em;
+}
+
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+  padding-bottom: 4em;
+}
+
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+  padding-bottom: 4em;
+}
+
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=tel]::placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+  padding-bottom: 4em;
+}
+
+@media only screen and (max-width: 1600px) {
+  input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder {
+    font-size: 1.3rem;
+  }
+  input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  input[type=text]::placeholder, input[type=email]::placeholder, input[type=tel]::placeholder {
+    font-size: 1.3rem;
+  }
+}
+
+textarea {
+  border-radius: 20px;
+  border: 2px solid #acd037;
+  color: #27461f;
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5em;
+  padding: 1em 1em;
+  resize: none;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+}
+
+textarea:-ms-input-placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+}
+
+textarea::-ms-input-placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+}
+
+textarea::placeholder {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  textarea::-webkit-input-placeholder {
+    font-size: 1.3rem;
+  }
+  textarea:-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  textarea::-ms-input-placeholder {
+    font-size: 1.3rem;
+  }
+  textarea::placeholder {
+    font-size: 1.3rem;
+  }
+}
+
+.radio-container {
+  font-size: 1rem;
+  color: #27461f;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  display: block;
+}
+
+.radio-container input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.radio-container label {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-container label::before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #acd037;
+  border-radius: 50%;
+  padding: 16px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.radio-container input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 24px;
+  height: 24px;
+  background-color: #41af49;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .radio-container input:checked + label:after {
+    top: 6px;
+  }
+}
+
+.labelTerms {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: #bcbec0;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  .labelTerms {
+    font-size: 1.1rem;
+  }
+}
+
+input[type=submit] {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  background-color: #acd037;
+  border-radius: 50px;
+  padding: .5em 2em;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #27461f;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background: #41af49;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-animation: pulse;
+          animation: pulse;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@media only screen and (min-width: 1800px) {
+  input[type=submit] {
+    font-size: 1.5rem;
+  }
+}
+
+.terminos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grisTitulos {
+  color: #808285;
+}
+
+.hero__Agri {
+  height: 90vh;
+  background: url("../img/hombre.png") no-repeat, rgba(65, 175, 73, 0.9);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0;
+}
+
+.hero__Agri .imgS {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 98vh;
+}
+
+.hero__Agri .imgS img {
+  height: 100%;
+}
+
+.columnAgri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.columnAgri img {
+  padding-bottom: 2.5em;
+  height: 220px;
+}
+
+@media only screen and (min-width: 1800px) {
+  .columnAgri img {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .columnAgri p {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+.productos {
+  padding: 4em 8em;
+  padding-top: 2em;
+  padding-bottom: 0em;
+  height: auto;
+}
+
+.productos .contenidoProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+}
+
+.productos .contenidoProductos .logoGrande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1em;
+}
+
+.productos .contenidoProductos .logoGrande img {
+  height: 150px;
+}
+
+@media only screen and (min-width: 1600px) {
+  .productos .contenidoProductos .logoGrande img {
+    height: 190px;
+  }
+}
+
+.info {
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.contenedor_tabla {
+  padding: 4em 0;
+}
+
+.tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #bcbec0;
+  padding: 0 2em;
+  padding-top: 0;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tabla .tituloTabla {
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.tabla p {
+  color: #41af49;
+  font-family: 'Neusa Next Pro Compact Medium';
+  font-size: 1rem;
+  text-align: right;
+  padding: 1em 0;
+}
+
+.tabla .left {
+  text-align: left;
+  padding-left: 0;
+}
+
+.tabla .left li {
+  font-family: 'Neusa Next Pro Compact Regular';
+}
+
+.tabla .left li ul {
+  margin-left: 1.5em;
+  padding-top: .1em;
+  padding-bottom: 0;
+}
+
+.tabla ul {
+  text-align: right;
+}
+
+.tabla li {
+  font-family: 'Neusa Next Pro Compact Regular';
+  color: #bcbec0;
+}
+
+@media only screen and (min-width: 1600px) {
+  .tabla li {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+.tabla li ul {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-right: 1em;
+  padding-bottom: 0;
+}
+
+.beneficios {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #808285;
+  padding: 2em 8em;
+  position: relative;
+  width: 100%;
+}
+
+.filaProducto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #bcbec0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+}
+
+.filaProducto p:first-of-type {
+  font-family: 'Neusa Next Pro Compact Bold';
+  font-size: 4.5rem;
+  width: 38%;
+  text-align: right;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.filaProducto p:last-of-type {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  text-align: left;
+  font-size: 2rem;
+  width: 38%;
+  line-height: 1.8rem;
+}
+
+.filaProducto img {
+  padding: .5em 4em;
+  height: 100px;
+}
+
+.final {
+  color: #808285;
+  text-align: center;
+  padding: 2em 8em;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #bcbec0;
+  position: relative;
+}
+
+@media only screen and (min-width: 1600px) {
+  .final {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
+
+.final .block:last-of-type {
+  font-family: 'Neusa Next Pro Compact Regular';
+  line-height: 1.7rem;
+}
+
+.final img {
+  height: 80px;
+  position: absolute;
+  bottom: 80%;
+  right: 15%;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
+}
+
+@media only screen and (min-width: 1800px) {
+  .swiper-slide {
+    height: 650px;
+    width: 650px;
+  }
+}
+
+.swiper-slide #imagen1, .swiper-slide #imagen2 {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-liquido {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -ms-grid-columns: (150px)[4];
+      grid-template-columns: repeat(4, 150px);
+  -ms-grid-rows: (120px)[5];
+      grid-template-rows: repeat(5, 120px);
+  gap: .2em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4em;
+}
+
+@media only screen and (min-width: 1600px) {
+  .grid-liquido {
+    -ms-grid-columns: (200px)[4];
+        grid-template-columns: repeat(4, 200px);
+    -ms-grid-rows: (120px)[5];
+        grid-template-rows: repeat(5, 120px);
+  }
+}
+
+.t1 p, .t2 p, .t3 p, .t4 p, .t5 p, .t6 p, .t7 p, .t8 p, .t9 p, .t10 p, .t11 p, .t12 p, .t13 p, .t14 p, .t15 p, .t16 p, .t17 p, .t18 p, .t19 p {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  color: #bcbec0;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: .5em 0;
+}
+
+.t1 p span, .t2 p span, .t3 p span, .t4 p span, .t5 p span, .t6 p span, .t7 p span, .t8 p span, .t9 p span, .t10 p span, .t11 p span, .t12 p span, .t13 p span, .t14 p span, .t15 p span, .t16 p span, .t17 p span, .t18 p span, .t19 p span {
+  color: #acd037;
+  font-size: 1.4rem;
+  font-family: 'Neusa Next Pro Bold';
+}
+
+.t3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+}
+
+.grid-solido {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -ms-grid-columns: (220px)[4];
+      grid-template-columns: repeat(4, 220px);
+  -ms-grid-rows: (120px)[5];
+      grid-template-rows: repeat(5, 120px);
+  gap: .2em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4em;
+}
+
+@media only screen and (min-width: 1600px) {
+  .grid-solido {
+    -ms-grid-columns: (250px)[4];
+        grid-template-columns: repeat(4, 250px);
+    -ms-grid-rows: (120px)[5];
+        grid-template-rows: repeat(5, 120px);
+  }
+}
+
+.s1 p, .s2 p, .s3 p, .s4 p, .s5 p, .s6 p, .s7 p, .s8 p, .s9 p, .s10 p, .s11 p, .s12 p, .s13 p, .s14 p, .s15 p, .s16 p, .s17 p {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  color: #bcbec0;
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: .5em 0;
+}
+
+.s1 p span, .s2 p span, .s3 p span, .s4 p span, .s5 p span, .s6 p span, .s7 p span, .s8 p span, .s9 p span, .s10 p span, .s11 p span, .s12 p span, .s13 p span, .s14 p span, .s15 p span, .s16 p span, .s17 p span {
+  color: #acd037;
+  font-size: 1.4rem;
+  font-family: 'Neusa Next Pro Bold';
+}
+
+.s17 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.encabe {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 4em 0;
+}
+
+.encabe h4 {
+  color: #41af49;
+  font-family: "Neusa Next Pro-CondensedBold";
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.encabe h4 span {
+  font-family: "Neusa Next Pro-CondensedRegular";
+  margin: 0;
+  font-size: 1.5rem;
+  color: #bcbec0;
+}
+
+@media only screen and (min-width: 1600px) {
+  .encabe h4 span {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.lista__abonissa li {
+  font-family: 'Neusa Next Pro Compact Regular';
+  font-size: 1.4rem;
+  padding: .2em 0;
+  line-height: 1.6rem;
+  color: #bcbec0;
+}
+
+@media only screen and (min-width: 1600px) {
+  .lista__abonissa li {
+    font-size: 1.5rem;
+  }
+}
+
+.lista__abonissa span {
+  color: #acd037;
+  font-family: "Neusa Next Pro-CondensedBold";
+}
+
+.iconSeccion {
+  height: auto;
+  padding-bottom: 2em;
+  max-width: 100%;
+}
+
+.iconSeccion .iconContenido {
+  border-bottom: 4px solid #acd037;
+  border-top: 4px solid #acd037;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 6em 0;
+  padding-bottom: 6em;
+  position: relative;
+}
+
+.iconSeccion .textoIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+}
+
+.iconSeccion .textoIcon p:nth-of-type(2) {
+  color: #41af49;
+  letter-spacing: .2rem;
+  font-size: 4rem;
+  line-height: 4.2rem;
+}
+
+.iconSeccion .formula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.textoIcon {
+  color: #bcbec0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+}
+
+.textoIcon p {
+  width: 100%;
+  text-align: center;
+}
+
+.textoIcon p:first-of-type, .textoIcon p:last-of-type {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.textoIcon p:first-of-type .textoVerde, .textoIcon p:last-of-type .textoVerde {
+  color: #41af49;
+}
+
+.textoIcon p:nth-of-type(2) {
+  font-family: Neusa Next Pro Bold;
+  color: #27461f;
+  font-size: 3.2rem;
+}
+
+.iconContenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.textoIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.formula {
+  color: #bcbec0;
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.formula .textoVerde {
+  color: #acd037;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2rem;
+}
+
+.formula .iconoTexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formula .iconoTexto p {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 1em;
+}
+
+@media only screen and (min-width: 1800px) {
+  .formula .iconoTexto p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+.formula .iconoTexto img {
+  padding: 1em 2em;
+}
+
+.formula .iconoTexto:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formula .iconoTexto:last-of-type p {
+  margin-left: -1.5em;
+}
+
+.partesFormula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  padding: 1em 0;
+}
+
+.verticalText {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.verticalText p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  color: #808285;
+  letter-spacing: .5rem;
+  margin-right: 1em;
+}
+
+.verticalText p::before {
+  content: '';
+  background-color: #acd037;
+  height: 7em;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.verticalText--white p {
+  color: white;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1800px) {
+  .verticalText--white p {
+    font-size: 1.5rem;
+  }
+}
+
+.verticalText--white2 {
+  position: absolute;
+  bottom: 12.8%;
+  left: 8%;
+}
+
+.verticalText--white2 p {
+  color: white;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1800px) {
+  .verticalText--white2 p {
+    font-size: 1.5rem;
+  }
+}
+
+.verticalText--white2 p::before {
+  content: '';
+  background-color: #acd037;
+  height: 10em;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.verticalText--last {
+  top: 0;
+}
+
+.verticalText--last p::before {
+  content: '';
+  background-color: #acd037;
+  height: 20em;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media only screen and (min-width: 1800px) {
+  .verticalText--last {
+    left: 5%;
+  }
+}
+
+.crecer {
+  height: 100vh;
+  background: url("../img/portadacrecer.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6em 8em;
+}
+
+@media only screen and (min-width: 1800px) {
+  .crecer {
+    padding: 10em 12em;
+  }
+}
+
+.crecer p {
+  color: #27461f;
+  font-family: 'Neusa Next Pro-Medium';
+  font-size: 3rem;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .crecer p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .crecer p {
+    font-size: 4.3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.crecer p span .neusaCompRegular {
+  font-family: 'Neusa Next Pro Compact Regular';
+}
+
+.crecer p span .textoMedio {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .crecer p span .textoMedio {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .crecer p span .textoMedio {
+    font-size: 6.5rem;
+    line-height: 6.6rem;
+  }
+}
+
+.crecer p span .neusaCompBold {
+  font-family: 'Neusa Next Pro Compact Bold';
+  line-height: 2.5em;
+}
+
+.crecer p span .textoGrande {
+  font-size: 9.5rem;
+  line-height: 7rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .crecer p span .textoGrande {
+    font-size: 8rem;
+    line-height: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .crecer p span .textoGrande {
+    font-size: 12.5rem;
+    line-height: 9.8rem;
+  }
+}
+
+.crecer p .ultimoText {
+  margin-top: -.65em;
+}
+
+.imgHero {
+  padding-top: 4em;
+}
+
+@media only screen and (min-width: 1800px) {
+  .imgHero img {
+    height: 70px;
+  }
+}
+
+.hero__3R--page {
+  margin-top: 4em;
+}
+
+.espacioVerde {
+  position: relative;
+  z-index: 3;
+  background-color: #41af49;
+  padding: 2em 0;
+  margin-top: 4em;
+}
+
+.espacioVerde span {
+  visibility: hidden;
+}
+
+.grande {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .grande {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .grande {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.text__r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parallax__completo {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/fondo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.parallax__completo--2 {
+  background-image: url("../img/recuperamos.png");
+}
+
+.parallax__completo--3 {
+  background-image: url("../img/fondoseccion3.png");
+}
+
+/*.parallax__completo--2 {
+    background-image: url('fondo1.png');
+    transform: all .3s ease-in;
+  }*/
+.parallax__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  max-width: 50%;
+  max-height: 100vh;
+  padding: 0;
+  margin-left: 35%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .parallax__columns {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+.parallax__columns ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.parallax__columns li {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+  color: #bcbec0;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 1em;
+  list-style-position: inside;
+  max-width: 350px;
+}
+
+.parallax__columns li:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1450px) {
+  .parallax__columns li {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .parallax__columns li {
+    max-width: 400px;
+  }
+}
+
+.parallax__columns span {
+  color: #acd037;
+  font-size: 1.2rem;
+  font-family: 'Neusa Next Pro Bold';
+}
+
+@media only screen and (min-width: 1450px) {
+  .parallax__columns span {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*.parallax__nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2em;
+    top: 50%;
+  }*/
+/*
+.prueba {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+}
+
+.textoPrueba{
+  width: 100%;
+  background-color: blue;
+  height: fit-content;
+  opacity: 0;
+}
+
+.box{
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+} */
+.iconosSeccion {
+  height: auto;
+  position: relative;
+  padding-right: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 1450px) {
+  .iconosSeccion {
+    padding: 1em;
+  }
+}
+
+.iconosSeccion img {
+  height: 128px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 1450px) {
+  .iconosSeccion img {
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .iconosSeccion img {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .iconosSeccion img {
+    height: 240px;
+  }
+}
+
+.verticalText__seccion {
+  left: 5%;
+}
+
+.verticalText__seccion p {
+  font-family: "Neusa Next Pro Compact Bold";
+  color: white;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  font-size: 6rem;
+}
+
+@media only screen and (max-width: 1600px) {
+  .verticalText__seccion p {
+    letter-spacing: .2rem;
+  }
+  .verticalText__seccion p::before {
+    height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .verticalText__seccion p {
+    font-size: 7.5rem;
+  }
+  .verticalText__seccion p::before {
+    height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  .verticalText__seccion p {
+    font-size: 8rem;
+  }
+  .verticalText__seccion p::before {
+    height: 2rem;
+  }
+}
+
+.verticalText__seccion p::before {
+  content: '';
+  background-color: #acd037;
+  height: 6.5rem;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.verticalText__seccion--recuperamos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.verticalText__seccion--recuperamos p {
+  font-family: "Neusa Next Pro Compact Bold";
+  color: #bcbec0;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  font-size: 6rem;
+}
+
+.verticalText__seccion--recuperamos p::before {
+  content: '';
+  background-color: #acd037;
+  height: 6.5rem;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.verticalText__recuperamos {
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.verticalText__recuperamos p {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  letter-spacing: .2rem;
+  margin-left: 1em;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@media only screen and (min-width: 1601px) {
+  .verticalText__recuperamos p {
+    font-size: 7.5rem;
+  }
+  .verticalText__recuperamos p::before {
+    height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  .verticalText__recuperamos p {
+    font-size: 8rem;
+  }
+  .verticalText__recuperamos p::before {
+    height: 2rem;
+  }
+}
+
+.verticalText__recuperamos p::before {
+  content: '';
+  background-color: #acd037;
+  height: 4rem;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.parallax__columns--recuperamos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  max-width: 50%;
+  max-height: 100vh;
+  padding: 0;
+  left: 0;
+  margin-left: 8%;
+}
+
+.parallax__columns--recuperamos li span {
+  color: #41af49;
+}
+
+.verticalText__section--3 p {
+  color: #bcbec0;
+}
+
+.contenedorSeccion {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.contenido__seccion {
+  background-image: url("../img/fondoseccion.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.cuadroInfo {
+  max-width: 32%;
+  color: white;
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  font-family: "Neusa Next Pro-CondensedRegular";
+}
+
+.cuadroInfo h5 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.cuadroInfo h5 .textoSeccion {
+  font-family: "Neusa Next Pro-CondensedBold";
+  color: #acd037;
+}
+
+.cuadroInfo h5 .textoSeccion:last-of-type {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1600px) {
+  .cuadroInfo h5 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+.cuadroInfo p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  max-width: 320px;
+}
+
+@media only screen and (min-width: 1600px) {
+  .cuadroInfo p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    max-width: 500px;
+  }
+}
+
+.cuadroInfo--hablemos h5 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.2rem;
+  color: #bcbec0;
+}
+
+.cuadroInfo--hablemos h5 .textoSeccion {
+  font-family: "Neusa Next Pro-CondensedBold";
+  color: #acd037;
+}
+
+.cuadroInfo--hablemos h5 .textoSeccion:last-of-type {
+  padding-bottom: 1rem;
+}
+
+.cuadroInfo--hablemos p {
+  color: #bcbec0;
+  text-align: justify;
+}
+
+.contenido__seccion--2 {
+  background-image: url("../img/fondoseccion2-borde.png");
+}
+
+.cuadroInfo__2 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.contenido__seccion--3 {
+  background: url("../img/seccion-biodigestor3.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100%;
+}
+
+.cabezote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 0;
+  margin-left: 12em;
+  position: relative;
+}
+
+.cabezote p {
+  font-size: 6.8rem;
+  line-height: 5.8rem;
+  font-family: "Neusa Next Pro Compact Medium";
+  color: #a7a9ac;
+  letter-spacing: .2rem;
+  position: relative;
+}
+
+@media only screen and (min-width: 1800px) {
+  .cabezote p {
+    font-size: 9.8rem;
+    line-height: 8.2rem;
+  }
+}
+
+.tituloProceso {
+  color: #27461f;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  padding: 0;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1801px) {
+  .tituloProceso {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+}
+
+.subtituloProceso {
+  color: #41af49;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  z-index: 2;
+  letter-spacing: 0;
+}
+
+@media only screen and (min-width: 1801px) {
+  .subtituloProceso {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.bloqueTexto {
+  z-index: 2;
+  margin-left: 1em;
+}
+
+.bloqueTexto p {
+  margin-top: -1.8rem;
+}
+
+.bloqueTexto p span {
+  line-height: 1.2rem;
+}
+
+@media only screen and (min-width: 1801px) {
+  .bloqueTexto p {
+    margin-top: -2rem;
+  }
+}
+
+.bloqueTexto--liquido {
+  margin-top: -1.3rem;
+}
+
+.bloqueTexto--liquido p span {
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 1801px) {
+  .bloqueTexto--liquido p span {
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1801px) {
+  .bloqueTexto--liquido {
+    margin-top: -2.5rem;
+  }
+}
+
+.descripcionProducto {
+  height: auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 1800px) {
+  .descripcionProducto {
+    height: auto;
+  }
+}
+
+.descripcion {
+  padding: 6em 0em;
+  position: relative;
+}
+
+.descripcion::before {
+  content: '';
+  background-color: #acd037;
+  width: 14em;
+  padding: 2px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .descripcion::before {
+    width: 14em;
+  }
+}
+
+@media only screen and (min-width: 1301px) {
+  .descripcion::before {
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .descripcion::before {
+    width: 28em;
+  }
+}
+
+.descripcion img {
+  position: absolute;
+  top: -6%;
+  left: -38%;
+  z-index: 1;
+  height: 200px;
+}
+
+@media only screen and (min-width: 1801px) {
+  .descripcion img {
+    top: -7%;
+    left: -40%;
+    height: 280px;
+  }
+}
+
+.descripcion-liquido img {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  z-index: -1;
+  height: 220px;
+}
+
+@media only screen and (min-width: 1801px) {
+  .descripcion-liquido img {
+    top: -5%;
+    left: -18%;
+    height: 300px;
+  }
+}
+
+.contenedorDescripcion {
+  padding: 1em 10em;
+  position: relative;
+}
+
+.contenedorDescripcion div {
+  padding: 0 1.5em;
+}
+
+.contenedorDescripcion p {
+  color: #bcbec0;
+  text-align: justify;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.contenedorDescripcion p span {
+  color: #acd037;
+  font-family: "Neusa Next Pro-CondensedBold";
+}
+
+@media only screen and (min-width: 1600px) {
+  .contenedorDescripcion p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+.infoSlides {
+  background: url("../img/fondo-a.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  border-top: 2em solid white;
+  border-bottom: 2em solid white;
+}
+
+.contenido__slide {
+  height: 100vh;
+  width: 100%;
+  padding: 4em 9em;
+  position: relative;
+}
+
+.contenido__slide h4 {
+  color: #acd037;
+  font-family: "Neusa Next Pro-CondensedBold";
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 1600px) {
+  .contenido__slide h4 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+.contenido__slide li {
+  color: #bcbec0;
+  text-align: left;
+  font-family: "Neusa Next Pro-CondensedRegular";
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: .5em;
+}
+
+.contenido__slide li span {
+  color: #acd037;
+  font-family: "Neusa Next Pro-CondensedBold";
+}
+
+@media only screen and (min-width: 1600px) {
+  .contenido__slide li {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+.infoSlides--2 {
+  background: url("../img/fondo-b.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-top: 2em solid white;
+  border-bottom: 2em solid white;
+  position: relative;
+}
+
+.infoSlides--2 ul {
+  margin-left: 1em;
+}
+
+.infoSlides--2 li {
+  padding: .5em 0em;
+}
+
+.infoSlides--2 li:last-of-type {
+  padding: 0;
+}
+
+.infoSlides--2 li ul {
+  padding-left: 0em;
+  margin-left: 0;
+}
+
+.infoSlides--2 li ul li {
+  padding: 0;
+}
+
+.infoSlides--2 li ul li:first-of-type {
+  padding-top: 1em;
+}
+
+.contenido__slide--3 {
+  background: url("../img/fondo-c.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.contenido__slide--4 {
+  background: url("../img/fondo-d.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.contenido__seccion--hablemos {
+  background-image: url("../img/hablemos-1.png");
+  background-size: 100% 100%;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenido__seccion--hablemos2 {
+  background-image: url("../img/hablemos-2.png");
+  background-size: 100% 100%;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenido__seccion--hablemos3 {
+  background-image: url("../img/hablemos-3.png");
+  background-size: 100% 100%;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block {
+  display: block;
+}
+
+.FullView {
+  height: 100vh;
+  width: 100%;
+}
+
+.neusaCompBold {
+  font-family: 'Neusa Next Pro Compact Bold';
+}
+
+.neusaCompRegular {
+  font-family: 'Neusa Next Pro Compact Regular';
+}
+
+.neusaCondRegular {
+  font-family: 'Neusa Next Pro-CondensedRegular';
+}
+
+.neusaCondBold {
+  font-family: 'Neusa Next Pro-CondensedBold';
+}
+
+.neusaBold {
+  font-family: 'Neusa Next Pro Bold';
+}
+
+.neusaMedium {
+  font-family: 'Neusa Next Pro-Medium';
+}
+
+.textoGrande {
+  font-size: 4.5rem;
+  letter-spacing: -.2rem;
+  line-height: 2.5rem;
+  padding: 0;
+  padding-top: .5rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .textoGrande {
+    font-size: 4.8rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .textoGrande {
+    font-size: 6rem;
+    line-height: 3rem;
+  }
+}
+
+.textoMedio {
+  font-size: 1.5rem;
+}
+
+.textoVerde {
+  color: #41af49;
+}
+
+.textoVerdeOscuro {
+  color: #27461f;
+}
+
+.textoVertical {
+  background-color: #acd037;
+}
+
+.textoVertical p {
+  display: inline-block;
+  position: relative;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.textoVertical p::before {
+  content: '';
+  position: absolute;
+  right: left;
+  width: 1px;
+  height: 10em;
+  background-color: blue;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resaltar:hover {
+  color: #acd037;
+  -webkit-transition: all .3 ease-out;
+  transition: all .3 ease-out;
+}
+
+.palabraVerde {
+  color: #41af49;
+}
+/*# sourceMappingURL=style.css.map */

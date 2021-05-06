@@ -1,0 +1,263 @@
+#cerca-a-mi{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+}
+//seccion
+.container__mapa {
+    height: 100%;
+    width: 100%;
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    h3{
+        color: $grisClaro;
+        font-family: $neusaCondensedRegular;
+        font-size: 2rem;
+        line-height: 1.8rem;
+        position: absolute;
+        left: 10%;
+
+        @media only screen and (min-width: 1800px) {
+          font-size: 3rem;
+          line-height: 2.8rem;
+        }
+    }
+}
+  
+  .card-body {
+    overflow-y: scroll;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    //direcciones
+  
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: $grisClaro;
+      border-radius: 8px 8px 8px 8px;
+    }
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: "texttos filtros "  "texttos imgselect";
+    place-items: start;
+  }
+
+ 
+  
+  .texttos {
+    grid-area: imgselect;
+    padding: 10px;
+    height: 500px;
+    width: 300px;
+  
+  }
+  
+  .filtros {
+    grid-area: filtros;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: fit-content;
+  }
+
+
+  .mapa__anuncio{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+    padding: 4em 0;
+    h3{
+      color: $grisClaro;
+      font-family: $neusaCondensedRegular;
+      font-size: 2rem;
+      line-height: 1.8rem;
+      position: absolute;
+      left: 10%;
+
+      @media only screen and (min-width: 1800px) {
+        font-size: 3rem;
+        line-height: 2.8rem;
+      }
+    }
+
+    h4{
+      color: $grisClaro;
+      font-family: $neusaCondensedRegular;
+      font-size: 2rem;
+      line-height: 1.8rem;
+      position: absolute;
+      right: 15%;
+      bottom: 10%;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 3rem;
+        line-height: 1.8rem;
+      }
+
+      span{
+        &:first-of-type{
+          color: $verdeOscuro;
+
+        }
+
+        color: $verde;
+        font-size: 1.8rem;
+      }
+    }
+
+    h2{
+      position: absolute;
+      font-size: 15rem;
+      color: $grisClaro;
+      font-family: $neusaCondensedRegular;
+      top: 30%;
+      z-index: -1;
+
+
+    }
+
+    .s__abonissa{
+      position: absolute;
+      right: 15%;
+    }
+
+    .mapa__clima{
+      position: absolute;
+
+      @media only screen and (min-width: 1800px) {
+        height: 700px;
+      }
+  
+    }
+  }
+  
+  .cont-select {
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+
+  }
+
+  .texttos{
+    margin-left: 2em;
+    width: 100%;
+  }
+  
+  .imgselect {
+    grid-area: texttos;
+  }
+  
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .imgcd {
+      img{
+        height: 500px;
+
+        @media only screen and (min-width: 1800px) {
+height: 800px;
+    
+        }
+      }
+
+  }
+
+
+  .contimprimir{
+    a{
+      color: $verde;
+      font-size: 1rem;
+      line-height: .8rem;
+      margin: 0;
+      padding: 0;
+      font-family: $neusaCondensedRegular;
+
+      &:hover{
+        color: $verdeClaro;
+      }
+    }
+    p{
+      color: $grisClaro;
+      font-size: .8rem;
+      line-height: 1rem;
+      font-family: $neusaCondensedRegular;
+    }
+ 
+  }
+
+  .textcd{
+    width: fit-content;
+  }
+  
+
+  
+  .im {
+    background-color: transparent;
+    background-color: beige;
+  }
+  
+  .map, .map2 {
+    text-decoration: none;
+  }
+
+
+  .Seleccione{
+      color: $gris;
+      font-family: $neusaCondensedBold;
+      font-size: 2rem;
+      line-height: 1.8rem;
+      border: none;
+      text-transform: uppercase;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (min-width: 1800px) {
+        font-size: 3rem;
+        line-height: 2.8rem;
+      }
+  }
+
+  #clima{
+    display: grid;
+    place-items: center;
+    padding: 4em 0;
+  }
+
+  .seleccion{
+    color: $verdeOscuro;
+    background-color: $verdeClaro;
+    font-family: $neusaCondensedBold;
+    font-size:1rem;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: .2em;
+    display: flex;
+    align-items: center;
+    margin-top: .5em;
+
+}
+

@@ -1,0 +1,118 @@
+
+.footerRow{
+    height: auto;
+    padding: 2em 6em;
+    background-color: $verde;
+    border-bottom: 5px solid $verdeClaro;
+    color: $verdeOscuro;
+    font-family: 'Neusa Next Pro-CondensedRegular';
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 1400px) {
+padding: 2em 6.5em;
+font-size: 1.2rem;
+line-height: 1.3rem;
+      }
+
+    .whatsapp{
+        color: white;
+            font-size: 3rem;
+            background-color: $verde;
+            padding: .3em .3em;
+            border: 1px solid $verde;
+            border-radius: 50%;
+        position: absolute;
+        top: -12%;
+        left: 50%;
+
+        &:hover{
+            animation: heartBeat; 
+            animation-duration: 2s;
+        }
+    }
+
+    h4{
+            color: white;
+            font-size: 2rem;
+        
+    }
+
+    p{
+        span .neusaCondBold{
+        font-family: 'Neusa Next Pro-CondensedBold';
+        }
+    }
+}
+
+.iconos--footer{
+   right: 3.5em;
+   top: 40%;
+   color: white;
+   font-size: 3.5rem;
+
+   @media only screen and (max-width: 1400px) {
+    font-size: 2.5rem;
+}
+
+   a{
+
+    &:hover{
+        color: $verdeClaro;
+        transform: scale(1.1);
+    }
+   }
+
+}
+
+.footerRow--2{
+    padding: 4em 8em;
+    margin: 0;
+    border-bottom: 2em solid $verde;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 1600px) {
+        padding: 2em 8em;
+    }
+
+    p{
+        color: $grisClaro;
+        font-family: 'Neusa Next Pro Compact Regular';
+        font-size: 1.2em;
+
+        @media only screen and (max-width: 1600px) {
+            font-size: 1rem;
+        }
+    }
+
+    a{
+        color: $verde;
+    }
+
+    .logoFooter{
+        img{
+            max-width: 600px;
+
+
+            @media only screen and (max-width: 1400px) {
+                max-width: 300px;
+                      }
+        }
+    }
+}
+
+.zoom{
+
+    &:hover{
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+    }
+        
+}
